@@ -14,7 +14,7 @@ Order.prototype.getToppingNames = function() {
         return 'none';
     }
 }
-Order.prototype.getTotalPrice = function() {
+Order.prototype.getTotalPrice = function () {
     let priceForSize;
     switch (this.size) {
         case 'small': 
@@ -74,6 +74,9 @@ function getSize() {
     }
     return selectedSize;
 }
+
+// goal 1: reduce toppings to one function
+
 function getFirstToppings() {
     const toppings = document.querySelectorAll('input[name="first"]');
     let selectedArr = [];
@@ -131,6 +134,15 @@ function formHandler() {
         i++;
         form.reset();
     });
+
+    //function hide, unhide
+    function hide(element) {
+        document.getElementById(element).classList.add("hidden");
+    }
+    function unhide(element) {
+        document.getElementById(element).classList.remove("hidden");
+    }
+
     const detailBtnOne = document.getElementById("detail-1");
     detailBtnOne.addEventListener("click", e => {
         e.preventDefault();
