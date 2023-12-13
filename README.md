@@ -29,7 +29,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 3. Open `index.html` in your browser. 
 
 ## Link
-https://hypyeon.github.io/pizza-parlor/
+https://hypyeon.github.io/Epicodus-project4-pizzaparlor/
 
 ## Tests
 ```
