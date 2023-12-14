@@ -53,13 +53,13 @@ Test: "It should return a total price for the order, fixed to 2 decimals. Base p
 Code: 
     const orderMinsu = new Order("Minsu", "large", ["olive", "mushroom"], ["pepperoni"], "delivery");
     orderMinsu.getTotalPrice();
-Expected: 23.25
+Expected: "23.25"
 
 Test: "If "pickup" is selected, there will be 5% discount applied to the total price."
 Code: 
     const orderJulie = new Order("Julie", "large", ["olive", "mushroom"], ["pepperoni"], "pickup");
     orderJulie.getTotalPrice();
-Expected: 22.09
+Expected: "22.09"
 
 Describe: Order.prototype.discountEligibility()
  
